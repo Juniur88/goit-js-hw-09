@@ -22,8 +22,8 @@ function onBtnStartChangeColor() {
 }
 
 function onBtnStopChangeColor() {
-    refs.btnStart.disabled = false;
-    refs.btnStart.disabled = true;
+    refs.btnStart.removeAttribute('disabled');
+    refs.btnStop.setAttribute('disabled', true);
 
     clearInterval(idInt);
 }
